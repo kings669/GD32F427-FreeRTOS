@@ -45,7 +45,7 @@ OF SUCH DAMAGE.
 #include "bsp_led.h"
 
 #define LED_TASK_PRIO		10
-#define LED_STK_SIZE 		128  
+#define LED_STK_SIZE 		218  
 TaskHandle_t LEDTask_Handler;
 
 /*!
@@ -90,5 +90,6 @@ int main(void)
 	
 	/* Start Task Scheduler */
 	vTaskStartScheduler();
+	
   while(1) {}
 }

@@ -28,6 +28,7 @@ void led_off(void)
 
 void led_task(void *pvParameters)
 {
+	led_init();
 	while(1)
 	{
 		led_on();
